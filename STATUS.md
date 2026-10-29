@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| Workflow version | 0.2.2 (2026-10-29) |
+| Workflow version | 0.2.3 (2026-10-29) |
 | Project | [FILL: short title, set by tools/init.R] |
 | Package | [FILL: package name, set by tools/init.R] |
 | Stage | 0, not started |
