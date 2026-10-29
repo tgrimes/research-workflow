@@ -2,6 +2,10 @@
 
 Dated lessons. Each line says what changed in which file and which project taught it.
 
+## Unreleased: changes to make after the stage 2 test run
+
+- The author line is not needed until the final draft. Today `tools/init.R` asks for `--author` at setup and stage 1 reminds the user of it in its first message, which held the first project's stage 2 on a question nobody needed answered yet. Change: `init.R` takes the package name and the title only and leaves the author slots as placeholders that pass `R CMD check` (the `Authors@R` person, the LICENSE holder, the README line, the manuscript YAML); a script `tools/authors.R` writes the author line into those four places; `03-manuscript.md`, step 6, runs it before the final render, and the checker in final mode already errors on an unfilled slot. Stage 1's init reminder then proposes the command without an author. Asked for on 2026-10-28 while stage 2 was running.
+
 ## 0.2.1 (2026-10-28)
 
 Lessons from the first run of stage 1, on the project pool-first-or-optimize-first (29 process-feedback items in its `log/01-idea-review.md`; the stage took about an hour and a half of agent time, most of it tool round trips).
